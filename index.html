@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loading...</title>
+    <link rel="stylesheet" href="resources/index/index-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta property="og:title" content="itsjxnahs@dev">
+    <meta property="og:description" content="My dev page!">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="httpa://pyrino.de">
+    <meta property="og:type" content="website">
+</head>
+<body>
+        <div class="terminal-loader">
+        <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+                <div class="control red"></div>
+                <div class="control yellow"></div>
+                <div class="control green"></div>
+            </div>
+        </div>
+        <div class="text">loading...</div>
+
+</div>
+<script>
+  (function(){
+    var el = document.querySelector('.text');
+    if (!el) return;
+    el.addEventListener('animationend', function(e){
+      if (e.animationName === 'typeAndDelete') {
+        window.location.href = 'cookie.html';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
